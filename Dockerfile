@@ -11,5 +11,6 @@ ENV N8N_PROTOCOL=http
 # Expone el puerto en el que correrá n8n
 EXPOSE 8080
 
-# Comando para iniciar n8n
-CMD ["n8n"]
+# Comando para iniciar n8n en el puerto 8080
+CMD ["n8n", "start", "--port", "8080"]
+
